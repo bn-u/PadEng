@@ -3820,3 +3820,15 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+		.lime {
+			background-color: #0000005e;
+			padding: 1em;
+			margin: 0.1em;
+		}
+
+		.map {
+			background-color: black;
+			padding: 1em;
+			margin: 0.1em;
+		}
