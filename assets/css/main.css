@@ -3878,8 +3878,8 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 			.lefthome {
-				height: 50px;
-				width: 160px;
+				height: 45px;
+				width: 140px;
 			}
 
 			.parent {
@@ -3887,7 +3887,7 @@ input, select, textarea {
 			}
 	
 			.righthome {
-				left: 175px;
+				left: 155px;
 			}
 		}
 
