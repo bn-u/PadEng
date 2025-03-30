@@ -2889,7 +2889,7 @@ input, select, textarea {
 			}
 
 				.tiles article {
-					height: 12em;
+					height: 20em;
 					width: 100% !important;
 				}
 
@@ -3074,6 +3074,7 @@ input, select, textarea {
 		top: 0;
 		width: 100%;
 		z-index: 10000;
+		position: sticky;
 	}
 
 		#header .logo {
@@ -3125,9 +3126,8 @@ input, select, textarea {
 			-webkit-animation: none;
 			-ms-animation: none;
 			animation: none;
-			background-color: transparent;
+			background-color: black;
 			box-shadow: none;
-			position: absolute;
 		}
 
 			#header.alt.style1 .logo strong {
@@ -3471,7 +3471,7 @@ input, select, textarea {
 			}
 
 			#main > * > .inner {
-				padding: 4em 0 2em 0 ;
+				padding: 2em 0 2em 0 ;
 				margin: 0 auto;
 				max-width: 65em;
 				width: calc(100% - 6em);
@@ -3480,7 +3480,7 @@ input, select, textarea {
 				@media screen and (max-width: 736px) {
 
 					#main > * > .inner {
-						padding: 3em 0 1em 0 ;
+						padding: 2em 0 2em 0 ;
 						width: calc(100% - 3em);
 					}
 
@@ -3617,7 +3617,6 @@ input, select, textarea {
 		-webkit-transition: -webkit-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		-ms-transition: -ms-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		transition: filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
-		padding-top: 3.25em;
 	}
 
 		#wrapper.is-transitioning {
@@ -3643,7 +3642,6 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#wrapper {
-				padding-top: 2.75em;
 			}
 
 		}
@@ -3832,3 +3830,67 @@ input, select, textarea {
 			padding: 1em;
 			margin: 0.1em;
 		}
+
+		.parent {
+			position: relative;
+		}
+
+		.lefthome {
+			height: 150px;
+			width: 475px;
+			display: flex;
+			position: absolute;
+		}
+
+		.righthome {
+			display: flex;
+			width: 445px;
+			height: 150px;
+			left: 500px;
+
+			text-align: center;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.lefthome {
+				height: 100px;
+				width: 315px;
+			}
+	
+			.righthome {
+				height: 100px;
+				width: 285px;
+				left: 340px;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			.lefthome {
+				display: inline-block;
+				height: 80px;
+				width: 250px;
+			}
+	
+			.righthome {
+				display: inline-block;
+				height: 80px;
+				width: 170px;
+				left: 275px;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			.lefthome {
+				height: 50px;
+				width: 160px;
+			}
+	
+			.righthome {
+				height: 50px;
+				width: 190px;
+				left: 175px;
+			}
+		}
+
+		
